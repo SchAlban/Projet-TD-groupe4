@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Page d'accueil</title>
+        <title>Boutique</title>
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/accueil.css">
+        <link rel="stylesheet" href="styles/shop.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+
         <header>
             <div class="boxvideo">
                 <nav>
@@ -17,8 +18,8 @@
                             <h2>SkateShop</h2>
                         </div>
                         <div class="nav">
-                            <a href="Projet.html" id="focus-page">Accueil</a>
-                            <a href="Shop.html">Shop</a>
+                            <a href="Projet.html">Accueil</a>
+                            <a href="Shop.html" id="focus-page">Shop</a>
                             <a href="">Panier</a>
                             <a href="Login.html">Login</a>
                         </div>
@@ -26,20 +27,19 @@
                 </nav> 
             </div>
         </header>
+
         <main>
             <section>
-            <br><br><br><br>
-            <center>
-              <fieldset class="accueil">
-                <center><h3 class="footer-col">SkateShop</h3></center>
-                <center><h4>Sur ce site de Ecommerce, vous trouverez tous types de skatesboards, différents thèmes de motifs, les protections nécessaires et a tout prix</h4></center>
-              </fieldset>
-              <img src="data/img/img_lobby.jpg">
-              <br><br>
-                <div class="redirect">
-                    <center><a href="Shop.html">Vers la boutique</center></a>
+                <br><br><br><br>
+
+                <!--Produit 1-->
+                <div class="skate1">
+                    <img src="data/img/skate1.jpg" alt="Skate">
+                    <h1>Skate 1</h1>
+                    <p class="title">Motif Explosion/Fumée</p>
+                    <p><button>Plus d'informations</button></p>
                 </div>
-            </center>
+
             </section>
         </main>
         <section id="slideshow">
@@ -50,7 +50,7 @@
                             <h4>Identifiez vous pour recevoir des nouveautées</h4>
                                 <form action="/search" id="searchthis" method="get">
                                     <input id="search" name="q" type="text" placeholder="EMail..."/><br>
-                                    <button> Confirmer </button>
+                                    <input id="search-btn" type="submit" value="Entrer"/>
                                 </form>
                         </div>
                         <div class="footer-col">

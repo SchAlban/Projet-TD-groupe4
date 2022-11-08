@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-        <title>Page d'accueil</title>
+        <title>Connexion</title>
         <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
-        <link rel="stylesheet" href="styles/accueil.css">
+        <link rel="stylesheet" href="styles/login.css">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -17,42 +17,53 @@
                             <h2>SkateShop</h2>
                         </div>
                         <div class="nav">
-                            <a href="Projet.html" id="focus-page">Accueil</a>
+                            <a href="Projet.html">Accueil</a>
                             <a href="Shop.html">Shop</a>
                             <a href="">Panier</a>
-                            <a href="Login.html">Login</a>
+                            <a href="Login.html" id="focus-page">Login</a>
                         </div>
                     </div>
                 </nav> 
             </div>
         </header>
+
         <main>
             <section>
-            <br><br><br><br>
-            <center>
-              <fieldset class="accueil">
-                <center><h3 class="footer-col">SkateShop</h3></center>
-                <center><h4>Sur ce site de Ecommerce, vous trouverez tous types de skatesboards, différents thèmes de motifs, les protections nécessaires et a tout prix</h4></center>
-              </fieldset>
-              <img src="data/img/img_lobby.jpg">
-              <br><br>
-                <div class="redirect">
-                    <center><a href="Shop.html">Vers la boutique</center></a>
+                <br><br><br><br>
+                <center><h1>Page de Connexion</h1></center>
+                <br><br>
+                <div class="login">
+                    <center>
+                        <form method="get" class="login">
+                            <div class="username">
+                              <label for="name">Entrez votre nom d'utilisateur: </label>
+                              <input type="text" name="name" id="name" required>
+                            </div><br>
+                            <div class="mail">
+                              <label for="email">Entrez votre adresse mail: </label>
+                              <input type="email" name="email" id="email" required>
+                            </div><br>
+                            <div class="nbtel">
+                                <label for="nbtel">Entrez votre numéro de téléphone: </label>
+                                <input type="number" name="nbtel" id="nbtel" required>
+                              </div><br>
+                            <div class="mdp">
+                                <label for="mdp">Entrez votre mot de passe</label>
+                                <input type="password" name="mdp" id="mdp" required>
+                            </div><br>
+                            <div class="button">
+                              <button>Se connecter</button>
+                            </div><br>
+                          </form>
+                    </center>
                 </div>
-            </center>
             </section>
         </main>
+
         <section id="slideshow">
             <footer class="footer">
                 <div class="container">
                     <div class="row">
-                        <div class="footer-col">
-                            <h4>Identifiez vous pour recevoir des nouveautées</h4>
-                                <form action="/search" id="searchthis" method="get">
-                                    <input id="search" name="q" type="text" placeholder="EMail..."/><br>
-                                    <button> Confirmer </button>
-                                </form>
-                        </div>
                         <div class="footer-col">
                             <h4>Projet Dev Interfaces Web</h4>
                             <ul>
